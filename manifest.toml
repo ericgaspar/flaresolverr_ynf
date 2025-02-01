@@ -32,9 +32,9 @@ ram.runtime = "50M"
     [install.domain]
     type = "domain"
 
-    [install.path]
-    type = "path"
-    default = "/flaresolverr"
+    #[install.path]
+    #type = "path"
+    #default = "/flaresolverr"
 
     [install.init_main_permission]
     type = "group"
@@ -52,10 +52,10 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    in_subdir = true
     amd64.url = "https://github.com/FlareSolverr/FlareSolverr/releases/download/v3.3.21/flaresolverr_linux_x64.tar.gz"
     amd64.sha256 = "e6f34cfa8047561e5c11080cdb6515e71776b5c5bb4e391336972ccc7368c4d6"
-
+    in_subdir = false
+    
     # autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
